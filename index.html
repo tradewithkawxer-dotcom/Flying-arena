@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flying Arena – FF Tournament</title>
+  <title>Flying Arena – FF Community</title>
 
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -14,60 +17,66 @@
   </style>
 </head>
 
-<body class="bg-slate-900 text-slate-100 min-h-screen">
+<body class="bg-slate-900 text-slate-100">
 
-  <!-- Header -->
+  <!-- Navbar -->
   <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
-    <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="font-gaming text-cyan-400 text-xl">Flying Arena</h1>
-      <a href="#join" class="bg-cyan-500 text-slate-900 px-4 py-2 rounded-lg font-semibold">
+      <a href="#join" class="bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-4 py-2 rounded-lg font-semibold transition">
         Join
       </a>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="max-w-5xl mx-auto px-4 py-16 text-center">
+  <section class="max-w-6xl mx-auto px-4 py-16 text-center">
     <h2 class="font-gaming text-4xl md:text-5xl text-cyan-400 font-bold">
       FF Community Esports
     </h2>
-    <p class="mt-4 text-slate-300 text-lg">
-      Free Fire Tournament Platform – Solo • Duo • Squad
+    <p class="mt-4 text-slate-300 text-lg max-w-2xl mx-auto">
+      Official Free Fire Tournament Platform by Flying Arena
     </p>
+    <a href="#tournaments"
+      class="inline-block mt-8 bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-6 py-3 rounded-xl font-semibold transition">
+      View Tournaments
+    </a>
   </section>
 
   <!-- Tournament List -->
-  <section class="max-w-5xl mx-auto px-4 py-8">
-    <h3 class="text-2xl font-semibold mb-4">Live Tournaments</h3>
+  <section id="tournaments" class="max-w-6xl mx-auto px-4 py-10">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Live Tournaments</h3>
 
-    <div class="grid gap-4">
-      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
-        <h4 class="font-semibold text-lg">🔥 Squad Clash</h4>
-        <p class="text-sm text-slate-300 mt-1">Entry Fee: ৳50 • Prize: ৳1000</p>
-        <p class="text-sm text-slate-400">Date: 10 Feb • Time: 8 PM</p>
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold">🔥 Squad Clash</h4>
+        <p class="text-slate-300 mt-1">Entry Fee: ৳50</p>
+        <p class="text-slate-400 text-sm">Prize Pool: ৳1000</p>
+        <p class="text-slate-400 text-sm">10 Feb • 8:00 PM</p>
       </div>
 
-      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
-        <h4 class="font-semibold text-lg">⚡ Solo Rush</h4>
-        <p class="text-sm text-slate-300 mt-1">Entry Fee: Free • Prize: ৳300</p>
-        <p class="text-sm text-slate-400">Date: 12 Feb • Time: 9 PM</p>
+      <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold">⚡ Solo Rush</h4>
+        <p class="text-slate-300 mt-1">Entry Fee: Free</p>
+        <p class="text-slate-400 text-sm">Prize Pool: ৳300</p>
+        <p class="text-slate-400 text-sm">12 Feb • 9:00 PM</p>
       </div>
     </div>
   </section>
 
   <!-- Join Form -->
-  <section id="join" class="max-w-5xl mx-auto px-4 py-12">
-    <h3 class="text-2xl font-semibold mb-6 text-center">Join Tournament</h3>
+  <section id="join" class="max-w-6xl mx-auto px-4 py-14">
+    <h3 class="text-2xl font-semibold text-center mb-6">Join Tournament</h3>
 
     <form class="max-w-md mx-auto bg-slate-800 p-6 rounded-xl border border-slate-700 space-y-4">
-      <input type="text" placeholder="Player Name" class="w-full p-3 rounded bg-slate-900 border border-slate-700">
-      <input type="text" placeholder="Free Fire UID" class="w-full p-3 rounded bg-slate-900 border border-slate-700">
+      <input type="text" placeholder="Player Name" class="w-full p-3 rounded bg-slate-900 border border-slate-700 outline-none">
+      <input type="text" placeholder="Free Fire UID" class="w-full p-3 rounded bg-slate-900 border border-slate-700 outline-none">
       <select class="w-full p-3 rounded bg-slate-900 border border-slate-700">
         <option>Select Tournament</option>
         <option>Squad Clash</option>
         <option>Solo Rush</option>
       </select>
-      <button class="w-full bg-cyan-500 text-slate-900 py-3 rounded-lg font-semibold">
+      <button class="w-full bg-cyan-500 hover:bg-cyan-600 text-slate-900 py-3 rounded-lg font-semibold transition">
         Submit
       </button>
     </form>
