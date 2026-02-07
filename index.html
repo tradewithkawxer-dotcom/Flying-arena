@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flying Arena – FF Tournament</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-gaming { font-family: 'Orbitron', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="font-gaming text-cyan-400 text-xl">Flying Arena</h1>
+      <a href="#join" class="bg-cyan-500 text-slate-900 px-4 py-2 rounded-lg font-semibold">
+        Join
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto px-4 py-16 text-center">
+    <h2 class="font-gaming text-4xl md:text-5xl text-cyan-400 font-bold">
+      FF Community Esports
+    </h2>
+    <p class="mt-4 text-slate-300 text-lg">
+      Free Fire Tournament Platform – Solo • Duo • Squad
+    </p>
+  </section>
+
+  <!-- Tournament List -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <h3 class="text-2xl font-semibold mb-4">Live Tournaments</h3>
+
+    <div class="grid gap-4">
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <h4 class="font-semibold text-lg">🔥 Squad Clash</h4>
+        <p class="text-sm text-slate-300 mt-1">Entry Fee: ৳50 • Prize: ৳1000</p>
+        <p class="text-sm text-slate-400">Date: 10 Feb • Time: 8 PM</p>
+      </div>
+
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <h4 class="font-semibold text-lg">⚡ Solo Rush</h4>
+        <p class="text-sm text-slate-300 mt-1">Entry Fee: Free • Prize: ৳300</p>
+        <p class="text-sm text-slate-400">Date: 12 Feb • Time: 9 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Form -->
+  <section id="join" class="max-w-5xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Join Tournament</h3>
+
+    <form class="max-w-md mx-auto bg-slate-800 p-6 rounded-xl border border-slate-700 space-y-4">
+      <input type="text" placeholder="Player Name" class="w-full p-3 rounded bg-slate-900 border border-slate-700">
+      <input type="text" placeholder="Free Fire UID" class="w-full p-3 rounded bg-slate-900 border border-slate-700">
+      <select class="w-full p-3 rounded bg-slate-900 border border-slate-700">
+        <option>Select Tournament</option>
+        <option>Squad Clash</option>
+        <option>Solo Rush</option>
+      </select>
+      <button class="w-full bg-cyan-500 text-slate-900 py-3 rounded-lg font-semibold">
+        Submit
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-slate-400 py-6 border-t border-slate-800">
+    © 2026 Flying Arena • FF Community Esports
+  </footer>
+
+</body>
+</html>
